@@ -1,10 +1,12 @@
 (function () 
 {
+    //this forces correct javascript syntax
     'use strict';
     angular
             .module('app')
             .controller('PhoneDetailController', PhoneDetailController);
-
+    
+    //this establishes the app connection to add the correct elements to the page
     PhoneDetailController.$inject = ['$routeParams', 'PhonesService'];
 
     function PhoneDetailController($routeParams, PhonesService) 
